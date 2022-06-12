@@ -8,6 +8,12 @@ body {
     flex-direction: column;
 }
 
+.body {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -41,10 +47,15 @@ a {
 
 .hero {
     display: flex;
-    align-items: flex-start;
-    flex-direction: row-reverse;
     align-items: center;
+    flex-direction: row-reverse;
     justify-content: center;
+}
+
+.hero h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .hero .content {
@@ -54,6 +65,15 @@ a {
 
 .content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin-right: 48px;
+} 
+
+.hero button {
+    margin: 16px;
+    padding: 2px 8px;
+    background-color: #3882f6;
+    color: white;
 }
+
